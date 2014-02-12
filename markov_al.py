@@ -7,7 +7,7 @@ import random
 n = int(raw_input("How many n's in your grams? > "))
 
 #COMMENT: get raw input of length of Markov string requested (this was originally in make_text() function)
-x = int(raw_input("length of your sentence? > "))
+x = int(raw_input("How many words would you like in your text? > "))
     # TO-DO QUESTION A: Can I set x and n above as global variables so can be referenced in both fucntions
     #    or can/should I put in MAIN function?
     #   (That way I can reference n by typing x-n and then range(x-n) below to get the actual correct # of 
@@ -49,7 +49,7 @@ def make_text(chains):
     # print "this is your start string: ", markov_string
     # print "this is the word to be added to the string: ", new_word
 
-    for i in range(x):
+    for i in range(x-n):
         # COMMENT append word to exxisting string
         markov_string += ' ' + new_word
         # COMMENT Take the existing string and split into list temporarily
@@ -63,16 +63,14 @@ def make_text(chains):
     # print "your markov_string is: ", markov_string
 
 def main():
-    script, firstfile, secondfile  = sys.argv
+    # COMMENT allows unspecified number of files to mash together
+    args = sys.argv
 
-    #COMMENT: Change this to read input_text from a file
-    f1 = open(firstfile)
-    f2 = open(secondfile)
-    input_text1 = f1.read()
-    input_text2 = f2.read()
-
-    input_text = input_text1 + " " + input_text2
-    # print input_text
+    # COMMENT loops through and combines all the text files into one string in input_text
+    input_text = ""
+    for i in range(1,len(args)):
+        f = open(args[i])
+        input_text += f.read() + ' '
 
     chain_dict = make_chains(input_text)
     random_text = make_text(chain_dict)
@@ -83,11 +81,8 @@ if __name__ == "__main__":
 
 
 # TO-DO LIST
-# put in two files or more
 # Do the checks for capital letters and end puncutation
 # Put in check if input file exists and give feedback if not
-
-# Extra: How would you have an unlimited number of argv that you could input from command line? 
 
 # check against markov.py methodology
 # Create a new Twitter persona and wire up your markov program with the twitter module (import twitter) to produce random tweets.
