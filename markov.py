@@ -18,7 +18,6 @@ def make_chains(corpus):
 
     # n-gram Markov chains
     n = 2
-
     d = {}
 
     split_corpus = corpus.split()
@@ -52,26 +51,37 @@ def make_text(chains):
 
     # create list of keys that start with capitalized word
     capitalized_keys = []
+    endpunct_keys = []
     for i in range(len(chains.keys())):
         if ord(chains.keys()[i][0][0]) in range(65, 91):
             capitalized_keys.append(chains.keys()[i])
+        elif ord(chains.keys()[i][-1][-1]) in [33, 34, 46, 63]:
+            endpunct_keys.append(chains.keys()[i])
 
+    # print endpunct_keys
     # print capitalized_keys
     # kick off loop with random selection in dictionary
     kickoff_key = random.choice(capitalized_keys)
     # print ""
     # print kickoff_key
 
+    length_of_sentence = 20
 # from that key, chose random value
     markov_string = kickoff_key[0] + ' ' + kickoff_key[1]
-    for i in range(20):
+    
+    for i in range(length_of_sentence):
         if not chains.get(kickoff_key):
             continue
+        elif markov_string[-1] in [33, 34, 46, 63]:
+            next_word = random.choice(capitalized_keys)[0]            
+        elif i == length_of_sentence - 1:
+            # print endpunct_keys
+            next_word = random.choice(endpunct_keys)[1]
         else: 
             next_word = random.choice(chains[kickoff_key]) 
             # print next_word
-            kickoff_key = kickoff_key[1], next_word
-            markov_string += ' ' + next_word
+        kickoff_key = kickoff_key[1], next_word
+        markov_string += ' ' + next_word
 
             # print kickoff_key
             # print ""
@@ -108,7 +118,7 @@ def main():
 
         input_text1, input_text2 = '', ''
 
-        for i in xrange(300):
+        for i in xrange(700):
             input_text1 += f1.readline()
             input_text2 += f2.readline()
             # print input_text1, input_text2
@@ -118,7 +128,13 @@ def main():
         chain_dict = make_chains(input_text)
         # print chain_dict
         random_text = make_text(chain_dict)
+        random_text1 = make_text(chain_dict)
+        random_text2 = make_text(chain_dict)
+        random_text3 = make_text(chain_dict)
         print random_text
+        print random_text1
+        print random_text2
+        print random_text3
 
 if __name__ == "__main__":
     main()
