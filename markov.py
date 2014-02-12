@@ -3,6 +3,15 @@
 import sys
 import random
 
+# After Liz's code review:
+# Edit code such that it returns an actual sentence with first word capitalized
+# ending with end punctuation.
+
+# edit kickoff_key such that it always starts with capitalized word
+
+# somehow end with punctuation
+
+
 def make_chains(corpus):
     """Takes an input text as a string and returns a dictionary of
     markov chains."""
@@ -41,8 +50,15 @@ def make_text(chains):
     """Takes a dictionary of markov chains and returns random text
     based off an original text."""
 
-# kick off loop with random selection in dictionary
-    kickoff_key = random.choice(chains.keys())
+    # create list of keys that start with capitalized word
+    capitalized_keys = []
+    for i in range(len(chains.keys())):
+        if ord(chains.keys()[i][0][0]) in range(65, 91):
+            capitalized_keys.append(chains.keys()[i])
+
+    # print capitalized_keys
+    # kick off loop with random selection in dictionary
+    kickoff_key = random.choice(capitalized_keys)
     # print ""
     # print kickoff_key
 
