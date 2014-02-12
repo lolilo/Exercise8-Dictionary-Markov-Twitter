@@ -69,10 +69,13 @@ def make_text(chains, cap_keys, end_keys, n, x):
 
         if not chains.get(key):
             key = random.choice(chains.keys())
+
+        if key in end_keys:
+            break
         # if key in end_keys:
         #     key = random.choice(cap_keys)    
-        if sentence_checker(markov_string): #key in end_keys:
-            return markov_string
+        # if sentence_checker(markov_string): #key in end_keys:
+        #     return markov_string
             # break
         # COMMENT append word to existing string
             
@@ -98,7 +101,8 @@ def make_text(chains, cap_keys, end_keys, n, x):
 
 # takes in sentence and checks for end punctuation
 def sentence_checker(sentence):
-    if sentence[-1] in ['!', '?', '.', '~']:
+    # print sentence[-1]
+    if sentence[-2] in ['!', '?', '.', '~']:
         return True
     else:
         return False
@@ -145,8 +149,11 @@ def main():
         # print cap_keys
         # print end_keys
 
-        random_text = ' '
+        random_text = 'Beginning text'
         while not sentence_checker(random_text):
+            # print random_text[-2]
+            # print sentence_checker(random_text)
+            # print random_text
             random_text = make_text(chain_dict, cap_keys, end_keys, n, x)
         print random_text
 
