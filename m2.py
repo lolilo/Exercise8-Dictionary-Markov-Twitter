@@ -7,10 +7,6 @@ import random
 
 from os.path import exists
 
-
-
-
-
 def make_chains(corpus, n):
     """Takes an input text as a string and returns a dictionary of
     markov chains."""
@@ -21,9 +17,12 @@ def make_chains(corpus, n):
 
     #COMMENT: loop through to create dictionary key of n-gram strings: paired with next word
     markov_dict = {}
+
     for i in range(len(word_list) - n):
-        markov_dictkey = " ".join(word_list[i:i+n]) 
+
+        markov_dictkey =  tuple(word_list[i : i + n]) #" ".join(word_list[i:i+n]) 
         # print markov_dictkey
+
         if markov_dict.get(markov_dictkey):
            markov_dict[markov_dictkey].append(word_list[i+n]) 
         else: 
@@ -64,6 +63,11 @@ def main():
 
     isValid = True
 
+    # Ensure user inputs at least one text file
+    if len(args) < 2:
+        print "Please provide at least one .txt file."
+        isValid = False
+        
     # Check if args exists
     for f in args:
         if not exists(f):
@@ -89,8 +93,8 @@ def main():
             input_text += f.read() + ' '
 
         chain_dict = make_chains(input_text, n)
-        random_text = make_text(chain_dict, n, x)
-        print random_text
+        # random_text = make_text(chain_dict, n, x)
+        # print random_text
 
 if __name__ == "__main__":
     main()
