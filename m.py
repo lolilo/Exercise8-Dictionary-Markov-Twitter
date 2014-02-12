@@ -24,9 +24,12 @@ def make_chains(corpus):
 
     # len(split_corpus) - n  ~ - n to not account for very last word. 
     for i in range(len(split_corpus) - n):
-        words = []
-        # make an n-gram as a list
-        words.extend(split_corpus[i : i + n])
+        
+        words = split_corpus[i : i + n]
+
+        # words = []
+        # # make an n-gram as a list
+        # words.extend()
         # convert list into a tuple, in order to use them as key in dict
         # only immutable data types for keys!
         words_as_a_tuple = tuple(words)     
