@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 import sys
+#TO-DO:  is this the same as saying "from sys import *"?
+
 import random
 
 #COMMENT: get raw input from user for n grams. (this was originally in make_chains() function)
@@ -9,7 +11,7 @@ n = int(raw_input("How many n's in your grams? > "))
 #COMMENT: get raw input of length of Markov string requested (this was originally in make_text() function)
 x = int(raw_input("How many words would you like in your text? > "))
     # TO-DO QUESTION A: Can I set x and n above as global variables so can be referenced in both fucntions
-    #    or can/should I put in MAIN function?
+    #    or can/should I put in MAIN function? Is there a better way so I'm not using global variables?
     #   (That way I can reference n by typing x-n and then range(x-n) below to get the actual correct # of 
     #   words requested by user input) - See TODO Question B below
 
@@ -81,8 +83,9 @@ if __name__ == "__main__":
 
 
 # TO-DO LIST
+# Create a new Twitter persona and wire up your markov program with the twitter module (import twitter) to produce random tweets.
+
 # Do the checks for capital letters and end puncutation
-# Put in check if input file exists and give feedback if not
+# Put in check if input file exists and return message if not
 
 # check against markov.py methodology
-# Create a new Twitter persona and wire up your markov program with the twitter module (import twitter) to produce random tweets.
