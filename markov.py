@@ -8,7 +8,7 @@ def make_chains(corpus):
     markov chains."""
 
     # n-gram Markov chains
-# TO-DO:    n = 2
+    n = 2
 
     d = {}
 
@@ -16,13 +16,23 @@ def make_chains(corpus):
 
     # print split_corpus
 
-    for i in range(len(split_corpus) - 2):
-        pair_of_words = (split_corpus[i], split_corpus[i + 1])
-        third_word = split_corpus[i + 2]
-        if not d.get(pair_of_words):
-            d[pair_of_words] = [third_word]
+    for i in range(len(split_corpus) - n):
+        words = []
+        # words = (words,) * n
+        words.extend(split_corpus[i : i + n])
+
+        words_as_a_tuple = tuple(words)
+
+        # for counter in range(n):
+        #     words.append = split_corpus[i + counter]         
+
+        next_word = split_corpus[i + n]
+        # pair_of_words = (split_corpus[i], split_corpus[i + (n - 1)])
+        # third_word = split_corpus[i + n]
+        if not d.get(words_as_a_tuple):
+            d[words_as_a_tuple] = [next_word]
         else: 
-            d[pair_of_words].append(third_word)
+            d[words_as_a_tuple].append(next_word)
 
     # print d
     return d
@@ -64,19 +74,31 @@ def main():
     from os.path import exists
 
     # Takes in Python script and one file as arguments. 
-    script, input_file = args
+    script, input_file1, input_file2 = args
     isValid = True
 
     # Check if input_file exists.
-    if not exists(input_file):
-        print "%r does not exist!" % input_file
+    if not exists(input_file1):
+        print "%r does not exist!" % input_file1
+        isValid = False
+    elif not exists(input_file2):
+        print "%r does not exist!" % input_file2
         isValid = False
 
     if isValid:
         # open and read file
-        f = open(input_file)
-        input_text = f.read()
+        f1 = open(input_file1)
+        f2 = open(input_file2)
 
+        input_text1, input_text2 = '', ''
+
+        for i in xrange(300):
+            input_text1 += f1.readline()
+            input_text2 += f2.readline()
+            # print input_text1, input_text2
+
+        input_text = input_text1 + input_text2
+        # print input_text
         chain_dict = make_chains(input_text)
         # print chain_dict
         random_text = make_text(chain_dict)
