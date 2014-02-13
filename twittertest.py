@@ -1,11 +1,6 @@
 # application name: markovtweetsalot
 
-# https://code.google.com/p/python-twitter/
 # https://github.com/bear/python-twitter
-
-# https://pypi.python.org/pypi/twitter
-# https://dev.twitter.com/docs
-# http://wilsonericn.wordpress.com/2011/08/22/tweeting-in-python-the-easy-way/
 
 import twitter
 import os
