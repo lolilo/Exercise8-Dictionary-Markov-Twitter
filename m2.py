@@ -12,7 +12,7 @@ import os
 
 def tweet(tweettext):
     twitter_key = os.environ.get("TWITTER_API_KEY")
-
+    # TODO must encrypt all other parameters
     api = twitter.Api(consumer_key=twitter_key,
                       consumer_secret='3eJ8bU5H4AXLWDNBakoB9F73dDiuzTP5Hy3UlDNU3E',
                       access_token_key='253795390-BCkmp8CqrVZJG0AINXfO1MfKyHrBYsnmOXnhsx64',
@@ -48,14 +48,16 @@ def make_chains(corpus, n):
 def capital_start(markov_dict):
     capitalized_keys = []
     for i in range(len(markov_dict.keys())):  
+        # TODO change to > or < statement
         if ord(markov_dict.keys()[i][0][0]) in range(65, 91):
             capitalized_keys.append(markov_dict.keys()[i])
     return capitalized_keys
 
 def end_punct(markov_dict):
     endpunct_keys = []
+    # TODO change to > or < statement
     for i in range(len(markov_dict.keys())):
-        if ord(markov_dict.keys()[i][-1][-1]) in [33, 34, 46, 63]:
+        if ord(markov_dict.keys()[i][-1][-1]) in [33, 34, 46, 63]: # change to strings of punc
             endpunct_keys.append(markov_dict.keys()[i])
     return endpunct_keys
 
@@ -102,6 +104,7 @@ def make_text(chains, cap_keys, end_keys, n, x):
         # markov_string_list = markov_string.split()
         # COMMENT join the last n items as new look up key
 
+        # better to contruct a new tuple from scratch
         new_key_list = list(key[1:])
         # print i
         new_key_list.append(new_word) # " ".join(markov_string_list[-n:])
@@ -124,51 +127,54 @@ def main():
     # COMMENT allows unspecified number of files to mash together
     args = sys.argv
     # Ensure user inputs at least one text file
-    isValid = True
+    # isValid = True
 
     if len(args) < 2:
         print "Please provide at least one .txt file."
-        isValid = False
+        # isValid = False
+        return
+        # return will break out of the main function
 
     # Check if args exists
     for f in args:
         if not exists(f):
             print "%r does not exist!" % f
-            isValid = False
+            # isValid = False
+            return
 
     # COMMENT loops through and combines all the text files into one string in input_text
-    if isValid:
+    # if isValid:
 
-        #COMMENT: get raw input from user for n grams. (this was originally in make_chains() function)
-        n = int(raw_input("How many n's in your grams? > "))
+    #COMMENT: get raw input from user for n grams. (this was originally in make_chains() function)
+    n = int(raw_input("How many n's in your grams? > "))
 
-        #COMMENT: get raw input of length of Markov string requested (this was originally in make_text() function)
-        x = int(raw_input("What is the maximum number of characters in your text? > "))
+    #COMMENT: get raw input of length of Markov string requested (this was originally in make_text() function)
+    x = int(raw_input("What is the maximum number of characters in your text? > "))
 
-        input_text = ""
-        for i in range(1,len(args)):
-            f = open(args[i])
-            for j in xrange(200):
-                input_text += f.readline()
+    input_text = ""
+    for i in range(1,len(args)):
+        f = open(args[i])
+        for j in xrange(200):
+            input_text += f.readline()
 
-        chain_dict = make_chains(input_text, n)
-        # for i in chain_dict.items():
-        #     print i
-        # print chain_dict
-        cap_keys = capital_start(chain_dict)
-        end_keys = end_punct(chain_dict)
+    chain_dict = make_chains(input_text, n)
+    # for i in chain_dict.items():
+    #     print i
+    # print chain_dict
+    cap_keys = capital_start(chain_dict)
+    end_keys = end_punct(chain_dict)
 
-        # TEST: test for capital and puncutation functions
-        # print cap_keys
-        # print end_keys
+    # TEST: test for capital and puncutation functions
+    # print cap_keys
+    # print end_keys
 
-        random_text = 'Beginning text'
-        while not sentence_checker(random_text):
-            # print random_text[-2]
-            # print sentence_checker(random_text)
-            # print random_text
-            random_text = make_text(chain_dict, cap_keys, end_keys, n, x)
-        tweet(random_text)
+    random_text = 'Beginning text'
+    while not sentence_checker(random_text):
+        # print random_text[-2]
+        # print sentence_checker(random_text)
+        # print random_text
+        random_text = make_text(chain_dict, cap_keys, end_keys, n, x)
+    tweet(random_text)
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,73 @@
+Shannon Burns was pleasantly surprised and financially unprepared when she was accepted to Hackbright Academy. Coming from a low-income network, Shannon had to think fast, so she founded Hacking for Women and the CodeShannon Scholarship to finance her own education, and she’s not stopping there.
+
+Shannon will “fund-it-forward” by donating 10% of her first year’s salary to support another woman’s coding education.
+
+We talk with Shannon about her journey to Hackbright, her goals as a developer, and how she is going to help women around the world.
+
+This post was originally posted at Course Report.
+
+What were you doing before you decided to apply to Hackbright?
+
+I got my degree at San Francisco State. I was studying Astrophysics, and I had one year left before graduation when SF State cut my all of the classes from my program, so I graduated with a degree in Recreation. I ended up getting a job at a small startup working in an attic. One of my buddies suggested that I try computer programming, so I went to a Women Who Code event and made my first program, fell in love with it, and realized that this is what I want to do with my life.
+
+Which bootcamps did you apply to? Why did you ultimately choose Hackbright?
+
+I spent a good six months researching coding schools – I interviewed students and teachers, checked out placement stats and average salary stats. I had found this thing that finally fit for me, so I wanted to make sure I was preparing myself the best that I could by choosing the best school for me.
+
+How much did the all-female aspect of the camp factor into your decision?
+
+When I first heard about Hackbright, I was actually really turned off. I was concerned that it was all women, and that it wouldn’t prepare me to work in the real world, which is mostly male-dominated. My perception didn’t change until I interviewed. As soon as I walked into the office, all the preconceived notions that I had about being a coding school for women just melted away – it was such a positive environment, and that really sealed the deal for Hackbright for me. I had been to Hack Reactor, App Academy, and Dev Bootcamp, but the visit to Hackbright cemented my decision.
+
+Did the fact that Hackbright teaches Python have an affect on your decision?
+
+At first, I studied JavaScript for six solid months to prepare for coding school. I used a bunch of different resources (check them out on Shannon’s website) to do that. Python was not a language that I had a lot of experience in, and I have aspirations to return to Lyft, where I currently work in a non-technical role, after school if the opportunity arises. Lyft has been very generous in their support of my goals. They’ve donated a computer to Hacking for Women and are hosting a benefit party at their old office building in late February.
+
+What was the application process like for you?
+
+I’ve gone through the interview process for a couple of schools now, and Hackbright’s is pretty similar to the other schools. They have an online application, and then a small coding challenge (I had to print sixes). Their application is language-agnostic, as opposed to other schools like Hack Reactor, who’s first interview is language agnostic but the second and third require a more intermediate knowledge of JavaScript. I didn’t hear back for months, because I missed the application deadline.
+
+When I did hear back, I set up a couple of interviews (just to be clear, not everyone who applies will get an interview and many do not make it past the first interview). The first interview was with Liz, and was a cultural fit interview, to make sure they can handle being around you for 10 hours a day. My second interview was with Christian (one of the cofounders). And I think the whole point of that one was to get me frustrated. It wasn’t necessarily a technical interview, but we did work through a coding problem together because I asked for one.
+
+It’s no wonder I got a 19 on my first computer science midterm, I didn’t learn the greedy algorithm!
+
+Instead of doing what’s easiest – that will bring me the maximum benefit – I always chose to pursue the hard path. After dropping out of my first computer science class, I forced myself to take summer school, and take the class again. When most were dropping out of engineering school, I convinced myself into double majoring in electrical engineering and computer science with just two years before graduation. I had to persuade the dean that I’d be OK signing up for long hours of doing problem sets and coding while my peers enjoyed basketball games and beer pong. I didn’t tell her that I’d also be taking on two TA positions and a RA position.
+
+College is expensive! Well, all that hard work paid off and got me to the place I always dreamed of living in California! 300 days of sunshine, which came with at steep price, but even my entry level engineering salary gave me a comfortable lifestyle. I even got invited to serve on Duke’s engineering advisory board!
+
+I once overheard my dad tell a friend of his: “My daughter is a war monger. While most people enjoy peace time in the form of a comfortable job, she has to go out and do startup after startup, with no break in between!”
+
+Why do I do this to myself? Truthfully, because I’m a little naive… I came to the US when I was two. My parents didn’t have a green card at the time, so the only way they could make money was to have my mom wake up at 5am to clean houses, while my dad went to engineering school. I was there to experience the trips to the Goodwill store, I lived with my family in one room for four years, and I walked around saying things like: “When my daddy gets a job…”
+
+All that hardship instilled an immigrant work ethic and endless drive in me. Rejection, disappointment, failure, and resiliency are easy to handle. I suck at leading a secure and stable lifestyle. Sometimes I feel like I might be missing out on things that are conventionally accepted, but I just cannot change who I am and stop being driven to achieve the goals I set for myself early in life.
+
+Gulnara was an Engineering Fellow at Hackbright Academy, and prior to that, she was working in a bank in Washington DC. Gulnara also leads the DC Nightowls group, the District’s after hours co-working community of self-starters turning big ideas into exciting projects. This is her story of a career pivot from finance to engineering.
+
+By Gulnara Mirzakarimova (Hackbright Academy – spring 2013 class)
+
+The first time I heard the term impostor syndrome was at Hackbright Academy, where I was learning computer science principles, web and software development. In a nut shell, what it means is – when you are not confident in your abilities even though your work says otherwise, you doubt yourself and are constantly afraid of people finding out that in reality you know nothing, which in itself is not true.
+
+Sheryl Sandberg, the COO of Facebook, mentioned it in her book Lean In, where she says that women tend to underestimate themselves. And even though men do it less, I am pretty sure there are plenty of men who have problems with confidence as well.
+
+There is a great talk on TED by Amy Cuddy on how to boost your self-esteem but I want to share what I learned from going though a career switch and making it work.
+
+See, while I was Hackbright I didn’t worry about not performing on the job, because I didn’t have one yet. My goal was to finish my final project where I was writing my own programing language and then prepare for interviews to get the job.
+
+Lesson #1: Do not stress about something that doesn’t exist.
+Now, fast forward through the process of interviewing and me landing a job as a software engineer at Jibe. I didn’t have time to worry if I had an impostor syndrome or not, I had a list of things I needed to learn as soon as possible, that included a new programming language, interaction with databases I never worked with and etc … They say you can teach a monkey to read; so, there is no reason why I couldn’t learn all of the things that were needed for the job.
+
+Lesson #2: Make a list of things that you do not know and the things you “think” you don’t know. Just learn them. You will be so busy you will have no time to worry.
+When I was picking a job, I was actually picking a team. I can learn new things in any job, but culture fit is not something that is easily found. I was the first female engineer hired at Jibe, and no, it didn’t scare me one bit, because I met the whole team before I made a decision and I knew I wanted to work with them. They are very smart and supportive.
+
+I cannot write this and not mention Brian. Brian is a senior developer and simply put is a genius, but most importantly he is a patient teacher thanks to whom now I do not hesitate to take on huge projects because I know I can deliver them.
+
+Lesson #3: Surround yourself with smart people, from who you can learn.
+If you are thrown in a wilderness with no idea how to fend for yourself, what are your chances of survival compared to being in a company of person who knows how to survive.
+
+When I was given my first solo client integration. I was determined not to ask for help, because I wanted to test myself. The project was not easy and was pretty big. So, I broke it down into pieces and made a timeline for myself; i.e. if I do not complete this part by this day, then I ask for help, but I will stay working late nights and on weekends and I will complete them on my own. Again it is nothing to do with ego; this was the final point for me to see what I learned and what I am capable of. I did deliver project on time, on my own and the client loved it.
+
+Lesson #4: When the problem seems big, break it down into small pieces.
+Solve one at a time and celebrate your achievements, tell others about your achievements, this way your confidence will be growing with real things to back it up with.
+
+Finally, there is so much I do not know yet, and it is amazing, because otherwise why to live if you know everything.
+
+Lesson #5: Accept the fact that there are thing that you do not know, there are thing that you will never know and there are things that You Can Decide To Learn.
