@@ -18,9 +18,13 @@ api = twitter.Api(consumer_key=twitter_key,
                       access_token_secret='D3LtIMOBvbm54An7YgiUMLJe1HO0tlDnNXXzLuynZqy58')
 
 
-print api.VerifyCredentials()
+# print api.VerifyCredentials()
+
+status = api.PostUpdate('I love python-twitter!')
 
 """
+TO-DO Check with other versions? 
+
 my_auth = twitter.OAuth(TOKEN,TOKEN_KEY,CON_SEC,CON_SEC_KEY)
 twit = twitter.Twitter(auth=my_auth)
 twit.statuses.update(status="I'm tweeting from Python!")

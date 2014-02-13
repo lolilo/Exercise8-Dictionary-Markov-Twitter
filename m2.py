@@ -5,10 +5,20 @@
 
 import sys
 #TO-DO:  is this the same as saying "from sys import *"?
-
 import random
-
 from os.path import exists
+import twitter
+import os
+
+def tweet(tweettext):
+    twitter_key = os.environ.get("TWITTER_API_KEY")
+
+    api = twitter.Api(consumer_key=twitter_key,
+                      consumer_secret='3eJ8bU5H4AXLWDNBakoB9F73dDiuzTP5Hy3UlDNU3E',
+                      access_token_key='253795390-BCkmp8CqrVZJG0AINXfO1MfKyHrBYsnmOXnhsx64',
+                      access_token_secret='D3LtIMOBvbm54An7YgiUMLJe1HO0tlDnNXXzLuynZqy58')
+
+    status = api.PostUpdate(tweettext)
 
 def make_chains(corpus, n):
     """Takes an input text as a string and returns a dictionary of
@@ -158,7 +168,7 @@ def main():
             # print sentence_checker(random_text)
             # print random_text
             random_text = make_text(chain_dict, cap_keys, end_keys, n, x)
-        print random_text
+        tweet(random_text)
 
 if __name__ == "__main__":
     main()
