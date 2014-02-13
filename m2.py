@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# https://code.google.com/p/python-twitter/
+# dev.twitter.com
+
 import sys
 #TO-DO:  is this the same as saying "from sys import *"?
 
