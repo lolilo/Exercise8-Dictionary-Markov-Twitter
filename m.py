@@ -8,20 +8,24 @@
 import sys
 import random
 from os.path import exists
+
+
 import twitter
-# import os
-
+import os
 # tweet on Twitter from command line
+def tweet(tweettext):
+    # key encryption
+    twitter_key0 = os.environ.get("TWITTER_API_KEY")
+    twitter_key1 = os.environ.get("TWITTER_API_SECRET")
+    twitter_key2 = os.environ.get("TWITTER_ACCESS_TOKEN")
+    twitter_key3 = os.environ.get("TWITTER_ACCESS_SECRET")
 
-# def tweet(tweettext):
-#     twitter_key = os.environ.get("TWITTER_API_KEY")
-#     # TODO must encrypt all other parameters
-#     api = twitter.Api(consumer_key=twitter_key,
-#                       consumer_secret='3eJ8bU5H4AXLWDNBakoB9F73dDiuzTP5Hy3UlDNU3E',
-#                       access_token_key='253795390-BCkmp8CqrVZJG0AINXfO1MfKyHrBYsnmOXnhsx64',
-#                       access_token_secret='D3LtIMOBvbm54An7YgiUMLJe1HO0tlDnNXXzLuynZqy58')
+    api = twitter.Api(consumer_key=twitter_key0,
+                      consumer_secret=twitter_key1,
+                      access_token_key=twitter_key2,
+                      access_token_secret=twitter_key3)
 
-#     status = api.PostUpdate(tweettext)
+    status = api.PostUpdate(tweettext)
 
 def make_chains(corpus, n):
     """Takes an input text as a string, and returns a dictionary of
@@ -76,7 +80,7 @@ def make_text(chains, cap_keys, end_keys, n, x):
     for word in range(len(key)):
         markov_string += key[word] + ' '
 
-    while len(markov_string) < x:
+    while len(markov_string) < x - 10:
     # for i in range(x - n):
         # if key is not in dictionary (this happens if we create a key from the last set of words in the provided text), choose another key
         if not chains.get(key):
@@ -103,7 +107,7 @@ def make_text(chains, cap_keys, end_keys, n, x):
 # takes in sentence and checks for end punctuation
 def sentence_checker(sentence):
     # index will be -2 since we are adding a space to the end of each word added to the markov string
-    if sentence[-2] in ['!', '?', '.', '~']:
+    if sentence[-2] in ['!', '?', '.', '~'] and len(sentence) < 140:
         return True
     else:
         return False
@@ -124,17 +128,19 @@ def main():
     # Check if args exists
     for f in args:
         if not exists(f):
-            print "%r does not exist!" % f
+            print "%r does not exist." % f
             # isValid = False
             return
 
     # if isValid:
 
     # get raw input from user for n, to be passed into make_text
-    n = int(raw_input("How many n's in your grams? > "))
+    # n = int(raw_input("How many n's in your grams? > "))
+    n = 2
 
     # get raw input for char length of final markov string
-    x = int(raw_input("What is the maximum number of characters in your text? > "))
+    # x = int(raw_input("What is the maximum number of characters in your text? > "))
+    x = 140
 
     input_text = ""
     for i in range(1,len(args)):
@@ -146,18 +152,25 @@ def main():
     cap_keys = capital_start(chain_dict) # list of keys
     end_keys = end_punct(chain_dict) # list of keys
 
-    random_text = 'Beginning text'
+    random_text = 'initial placeholder text'
+    isTweet = False
 
-    # check if sentence satisfies our specifications
-    while not sentence_checker(random_text):
-        random_text = make_text(chain_dict, cap_keys, end_keys, n, x)
+    while not isTweet:
+        # check if sentence satisfies our specifications
+        while not sentence_checker(random_text):
+            # print 'checking sentence %r' % random_text
+            random_text = make_text(chain_dict, cap_keys, end_keys, n, x)
+        print random_text
 
-    print random_text
-    # tweet(random_text)
+        # ask user if we should tweet the generated markov chain
+        should_we_tweet = raw_input('Would you like to tweet this message(Y/N)? ')
+
+        # Tweet if user says yes. If no, reset random_text to generate another markov chain. 
+        if should_we_tweet == 'Y' or should_we_tweet == 'y':
+            tweet(random_text)
+            isTweet = True
+        else:
+            random_text = 'initial placeholder text'
 
 if __name__ == "__main__":
     main()
-
-
-# TO-DO LIST
-# Create a new Twitter persona and wire up your markov program with the twitter module (import twitter) to produce random tweets.

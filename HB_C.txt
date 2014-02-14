@@ -1,0 +1,96 @@
+Straight From The Horse's Mouth, Or The Unofficial Hackbright Admissions FAQ
+Hint -- The final interview will be conducted by a talking horse.
+
+Q: Lolwut?
+
+I figure we're about due for some clarification. I've been head of instruction for Hackbright Academy for just about one year now, and unfortunately, our admissions process remains completely opaque. Part of this is due to the simple fact that admissions is a difficult thing, the remainder is due to my own incompetence and absent-mindedness. This has resulted in more than a few broken hearts, and more than one person's application getting 'lost in the system'. (I would like to comment that it goes both ways: if we email you and you don't respond, that makes us equally sad.) For all that, I apologize. It is a hard thing to do. Consider this: as agonizing as it is for you to receive a rejection letter, amplify that by the hundreds of times that we have to tell someone that we didn't think they were a good fit, no matter how eager and excited they were. We're not so large and faceless yet that each rejection doesn't affect us personally.
+
+Think of this FAQ as both a clarification of our process, so that when we slip up, you might find it in your heart to forgive us our failings, and a pre-emptive public apology.
+Q: What exactly is the process?
+
+The general process is three steps:
+Submit an application
+First round interview
+Second round interview
+After the second round, we give our final decision. Generally, we do not deviate from this process, and already my heart goes out to everyone who's reading this sentence and feeling disappointment.
+
+Q: What exactly are my chances?
+
+First, if you're a dude, I commend your tenacity in applying despite the fact that we do not allow men in the course. So while you may have an impressive resume and be a compelling applicant, your chances are still zero and that will not change in the near future.
+
+For the rest of you, our actual demographic, statistically, your chances aren't much better than that dude. That's not to say you shouldn't apply, because you absolutely should. The issue at hand is that we run a physical facility, which limits our ability to accept applicants. Currently, we're capped at 26 students per session. We potentially have the ability to accept a few more, with a hard stop at 32, but we haven't yet solved the problem of noise levels, and adding more would just make a bad problem worse. That said, you'd think, hey, 26 is a decent size, and it is. Only, we never anticipated how important our work would be, and how much it would mean to people.
+
+Our first class was 12 students, and we got 40 applications. Our second class grew a little, to 16, and so did our applicant pool, about 90 applied. The third and current class (as of this post) is 26-strong, with roughly 200 applications. At the rate we're receiving applications for the 2014 Summer Session, we should top out between 400 to 500, putting us at the same acceptance rate as Harvard. Dang.
+Q: How do I improve my chances?
+
+Our application page is simple, but that does not mean it's easy. We have to filter out the vast majority of applicants just from the contents of the application, so make yourself stand out. There are only a few fields, so fill them out thoroughly. Where we ask you to teach us something new, the key word here is teach, not new. Explain any concept of your choice so completely that we could not possibly have any further questions.
+
+Do the optional coding challenge! It's optional, yes, and that's slightly misleading. We understand that you don't already know how to code, and that's why you're applying. But you should know, before you apply, that this is what you want to do for 8 hours a day for three months, and then, the rest of your life. Spend a few hours, a week, maybe, learning just enough to complete the challenge. There are great resources out there, Codecademy, Ruby Monk, Treehouse, etc., and any one of these can get you just enough coding know-how to do so. Think of it like a puzzle: taking time to solve it shows great initiative that can set you apart from the casually-interested. I'm especially fond of answers that aren't written in code, but instead in mathematical notation or enumerated, logical steps. More than once, that has guaranteed a second interview.
+
+Be personable and entertaining in your answers. We don't have a stodgy admissions department looking to mark checkboxes. David and I read each application personally, and if your writing resonates with either of us, that can be the difference between an interview and being passed over.
+Q: I solved your challenge but I really don't know anything about programming at all, should I apply?
+
+Yes, please, absolutely. Rather than make it easy on ourselves, we've chosen to explicitly teach people with little to no experience at all in programming. You are our target demographic, and we've had great success with people whose only experience was the 3 hours on Codecademy needed to solve our coding challenge. We actively turn away people who know too much because they don't need our help.
+Q: Why is this interview so important anyway?
+
+The word 'academy' is in our name, but we're not even remotely close to being a normal school. When it comes to instruction, I don't just lecture for an hour and walk away. I spend the entire day interacting with students and answering questions. The interview serves as a filter. You may be a more-than-qualified applicant, but if you can't stand me for an hour, I probably won't end up growing on you. That's problematic if we're spending 8 hours in a room together.
+
+Because our program is so short and so intense, we can't rely on the traditional model of presenting information and waiting for students to absorb knowledge through osmosis. You will be asked to bring all your mental faculties to bear down on a rigorous discipline, solving difficult problems, and where your skills fall short, you are buoyed by the instruction staff. Working this closely means it's imperative that we discern early on if we have a constructive rapport. Naturally, this means we will turn away perfectly great people. This is not an indictment of your character, but a failing of our methodology. 
+Q: I didn't get an interview, and now I'm sadfaced. :(
+
+That's not a question, but I'll speak to it anyway. If you didn't get an interview, do not despair. Again, Hackbright has become so competitive that we simply cannot accept or even interview everyone who applies. We get a lot of false negatives, and more than once have we discovered that an applicant has gone on to greater things than we can provide. We definitely aren't perfect and have gotten it wrong before, so please try not to take it personally. Please do apply again! This time, change your application up. We ask that applicants, after having received notice that they have not been selected for the quarter, to wait at least one quarter before applying again. This gives you time to work on improving your application. We love nothing better than to see improvement in an applicant.
+
+There are many ways you can improve in the interim, but materially, you could just work your way through the two textbooks we use for the course:
+Learn Python The Hard Way
+How To Think Like A Computer Scientist
+We ask every incoming student to work through these books before arriving on the first day, so it's as good a start as any.
+
+Q: I read those books and, I think I uhh... accidentally became too smart for Hackbright.
+
+That's okay, too. Please apply anyway. As mentioned before, it honestly gives me great satisfaction to tell someone that they're more than qualified to go out and be awesome without my help. I'm looking at you, @sharonw and @reneighbor. We're not in the business of giving our services to someone who doesn't need them, this is not the foundation of commerce. We trade for currency only when the services rendered will be worthwhile.
+
+Sometimes though, you're in that weird place where you're too advanced to be a Hackbright student but not yet ready to strike it out on your own. For those people, we have the Hackbright Apprentice program, which is a combination of self-paced study through the Hackbright curriculum and TAing for first half of the quarter, then joining the students for the final projects. Going forward, we're going to formalize the apprenticeship and make it a more structured program to run parallel to the coding fellowship. Trust me, it's super fun and you want to be a part of it.
+Epilogue
+
+I really hope that clarified things. Again, we're human, running something that's grown beyond our capabilities to handle, and we're desperately trying rectify that, but we haven't solved it yet and it's going to be a bumpy process for some time coming. We've been accused of being unprofessional because of it, and to that I have no rebuttal. Only, we're trying to make admissions smoother and fair, and I hope you'll be forgiving while we hammer that out.
+
+P.S. The horse mentioned above is me: I conduct the final interview.
+
+You can follow me on twitter at @chriszf, but I pretty much never tweet ever so it's not worth it.
+
+
+
+Year 1 of the Revolution
+I must confess, I am addicted to anonymity. Not the crass commodity that powers John Gabriel's first law of internet, but the real stuff, anonymity bordering on invisibility. I aspire to leave as little trace on the internet as possible, stopping just shy of creating deliberately misleading identities to conceal my antics. You may notice a few twigs broken here and there, scant castings as digital records become inescapable, but you'll find no proof of me. The sasquatch is my spirit animal.
+
+My dreams of growing up to be Harry Henderson are sas-squashed today because something important has happened, and I'm obligated to announce it.
+
+Almost without fail, the world must move before I'll write. The two are so correlated, an observer may not perceive the causality of the situation. It may seem as if the mere act of putting virtual pen to virtual paper summons apocalyptic tremors. In reality, I'm more of a seismograph for technology, selectively writing about things that move me. What I'm feeling now are simply the foreshocks of a greater shift in the way Silicon Valley hires engineers.
+
+In the past three weeks, some nineteen job offers have been made to Hackbright students. For those of you unfamiliar, Hackbright is a trade school with an atypical proposition: the total time to go from complete novice to skilled developer clocks in at just under three months, or two and a half werewolf cycles. I'll qualify my use of 'skilled developer'. In honesty, the phrase is a bit of propaganda; the reality is that a Hackbright student is competitive with a new graduate armed with a four-year computer science degree...
+
+...
+
+Now it sounds even more preposterous. 
+
+But is it that unbelievable? If you take a typical college student, estimating that they retain only about half of what they learn, some fraction of which is medieval studies, the bar seems much less altitudinous. Mix a healthy dose of computer science, practical system administration, and modern software development practices, and the playing field is level. With a small class size (less than thirty), Hackbright is essentially the small-batch artisanal house blend of IT. You've probably never heard of it.
+
+You have, however, heard of the employers who believe in our process and our students. Eventbrite, Survey Monkey, New Relic, Facebook, Bitcasa, StubHub, Facebook.... Facebook! Let me assure that none of these organizations are making special dispensation for our students and no punches were pulled during the interview process. If they were lowering their standards at all, I would be employed at one of these places:
+
+The recent Facebook hire serves as final emphasis on a story we've been writing for a year now. With the right person, the right curriculum, and the right instructors, it's possible to train a person in ten weeks to be competitive with a college graduate with a computer science degree, even for a position at a tier-1 engineering organization. Beyond that, it appears to be repeatable.
+
+Let's ignore the obvious conclusion for a moment*, as this raises a few questions about state of hiring in Silicon Valley. If an entry-level engineer can be vat-grown in a couple of months, what does that say when we need a specialist? Can we repeat the same process? Can thoughtful, immersive training replace years of study and experience? Our past successes suggest that it's possible, and at least worth looking into. 
+
+In my experience, the average new hire takes about two months to come up to speed and produce something useful. This is assuming a typical onboarding process, where they're expected to accrete knowledge and osmose it through their semi-permeable membranes without direct intervention. Instead, with careful guidance, we might be able to abbreviate that to a fortnight. Or we could go all-out, and use the two months to train someone up from an average developer to be a great one in almost any niche required.
+
+We're basically replicating the plot of Captain America, but with nerds.
+
+There are caveats of course. Not everyone is suited to having their brain inserted into a particle accelerator and blasted with knowledge protons. It takes certain characteristics which I'm not yet ready to codify here. (I'll save that for another treatise.) Still, hiring processes could be greatly reformed. Imagine if culture fit and potential were the overriding factors, knowing that any gap in skill could be accounted for in the training period. It wouldn't solve all of our staffing problems, but it would be a huge boon.
+
+The thing is, you don't even have to imagine this. One company already does this, sending new hires through a 'bootcamp' experience for their first month and a half: Facebook (I'm sensing a theme, here). By all accounts, this program is a great success. Their only flaw here is that they exclusively accept 'great' programmers to start. Their criteria could be amended to include candidates who are merely 'very promising', and do just as well. It recommends a scenario where the solution to all of the Silicon Valley's hiring problems is not just fixing the hiring process, but the training process as well. In my opinion, this shakes up pretty much everything we know about hiring knowledge workers and the role of college in producing them.
+
+Every offer made to every one of my students is the result of their hard work and dedication, and of them I could not be more proud. For myself, I am honored to have played my small part. Indeed, to all my protégés, scattered to the four corners of Silicon Valley as you are, it has been a great pleasure to work with such talented engineers. I could not have asked for a more wonderful experience. Thank you all for making Hackbright's first year a success.
+
+* Go to college. Seriously. HBA is not a replacement for college. It's the obvious conclusion, but it's wrong.
+
+Follow me on Twitter... when I put it that way, it sounds like an order. Just do it though, it probably won't hurt.

@@ -1,0 +1,208 @@
+How to hire a lady to do software engineering
+I'm guessing you're reading this post because you've got a problem. Your problem is, you can't seem to hire any women. No matter how many events for women in tech you have, no matter how many women you get into the pipeline, you never end up with as many as you want getting through. You might be aware of other problems with your hiring process, maybe a friend you know wasn't able to make it through, despite being smart and capable. Maybe you give out a lot of offers, but despite them being generous offers, few are taken. Maybe you're interested in a candidate with a non-traditional background, but you know your interview process will grill them on things they are weakest at, robbing you of the talent you need. Maybe you just hate whiteboarding, which sounds like an enhanced interrogation technique. 
+
+So what is there to do? After all, there's a shortage of talent, but no shortage of pretenders to software engineering. Candidates that can't code fizz buzz are rampant, and new grads from nearby colleges are whisked away quickly by Facebook or the Department Of Defense. You don't want to waste your company's resources on someone who proves down the line to be incapable of doing the work, 2 months of salary and a bunch of onboarding time down the drain. The question is, how can you tell the difference?
+
+First, let's talk about the information you're actually after. What kind of information do you actually need to know, in order to know you want to hire someone?
+
+What do you actually need?
+
+For me, I need to know someone can learn fast (ie, is smart) and communicate well. No one starts a job knowing the whole tech stack, and many people start without the requisite language experience. Really just being able to pick things up without being told over and over again is a good indicator. I also need to know that they'll communicate well, and tell me when they don't know something. Pairing with someone can show me both of these things, and can give me another insight as well. I typically expect a developer to be able to research things and learn things by themselves, not just when I'm sitting there spoon-feeding them. So, giving the interviewee advance notice that you'll be pairing, and what technologies you'll be using gives them a chance to prepare. As a senior developer who mentors a lot of junior developers, it's much simpler for me to show up to help them if they have already prepared, and can demonstrate to me where they're stuck. 
+
+An example:
+
+I'm in contact with a potential developer named Jane. She's been developing in Python but mostly in Javascript for about a year. She's used Django before, as well as Flask. She's never worked on a super complex webapp, because she's mostly been in the front-end for awhile. I need someone to do some work in the back-end, so I don't know if Jane will be a good fit, but she's expressed strong interest in doing more server-side work. I've brought her in for a culture interview, and she gets along famously with the team. I've decided to bring her in for a pairing interview. 
+The main things I want to test are her knowledge of server-side web development. In particular, we have a lot of asynchronous processes that run to integrate our application with other services. The nitty-gritty details aren't important, I want to test Jane's thinking style, and know whether or not she'll be able to understand and work on these kinds of problems.
+I'll send Jane this email:
+Hi Jane,
+
+I wanted to drop you a line and see if you'd be interested in coming in to do a pairing interview. You got along so well with our team, they wanted me to bring you in for a second round. 
+
+Because you've been mostly a front-end developer for awhile, I'd like to focus on your back-end skills. We'll be creating a small Flask app that serves JSON, but we'll also be using Celery to schedule data processing tasks. We'll be creating an app that allows a user to sign up with Facebook or Twitter. That user will then be put in a queue of users to be processed. We're going to try to find people they're connected with that also use our app, and then notify them that they have friends using the application. It will probably take us all day to get this done, so plan on a full day of coding with me. Also, take a look at Flask, Celery, the python-twitter module, and the python-fb module. Let me know if you have a preferred editor or any tools that will make you more effective.
+
+I'd like to give you some time to prepare, so does a week from now sound good? I have Wednesday and Thursday next week available for this, or the week following on Tuesday.
+
+Thanks, and let me know if you have any questions before then.
+
+In this email, I made sure to do a number of things. First, I made sure she understood we were interested in her. Many candidates, especially women, have serious problems with impostor syndrome. They might be sure of their code, but aren't sure of themselves. They don't know where they stand, and this weakens their resolve. Starting from a place where they can feel confident will help them perform at their best.
+
+Second, I was clear about what we'd be doing, and why. Many candidates that complete coding challenges or whiteboarding problems don't know what you're looking for. Other interviews with other companies, friends and colleagues are giving this person advice about what to accentuate and show you - this advice may or may not be correct. You might be looking for a front-end developer but not care about their UX skills, what you want to see is performant code. When they lay on thick with the transitions and sparkly colors but don't bother to optimize, you'll pass on someone who is normally good, but just got out of a process with another company who wanted clean lines, not clean code. In a normal workplace situation, you'd be able to give feedback and get what you want. Why not do it in an interview?
+
+Third, I told her what to familiarize with, and I made it clear I expected her to prepare. Too many times we've been judged because we didn't know a command-line tool, a common module, or something someone has decided we absolutely need to know in order to program properly. Given the diversity of applications of a given language, how could we possibly have a canonical set of tools or modules? 
+Preparation isn't something that will cause you to receive fake signals. In an actual job situation, you'd have time to prepare and research any given solution before you begin programming. This doesn't mean you never have to think on your feet, and during my 4-to-8 hour session with Jane, there will be many opportunities for me to make her think on her feet, and show me her just-in-time learning and problem-solving skills. Doing the search of the graph, for instance, or intelligently processing a queue of users will be great examples of her having to learn a new way of doing things. There are also enough things for her to learn that she probably won't end up finishing them all by the time we pair. It will give me a chance to know if she's a preparer or a procrastinator, and it allows me to do it in a friendly setting. 
+
+Other Tactics
+
+This example is one of many tactics to use. Contracting is also a valuable and useful solution to not knowing whether or not someone will fit in with the team, or be able to do the work. Depending on your company, you might have a backlog of bugfixes, support emails that require doing research in your codebase, or a mystery to solve due to an intermittent error. Exposing someone to your actual code, or watching someone solve a problem on a computer rather than an arbitrary environment will help you know whether they're a problem-solver, not a syntax-memorizer. If you want to use contracting as a means to interview someone, keep a developer environment set up for this purpose. Having something ready decreases that day-long setup process that most developer environments take to setup, and you don't want to pay someone to watch things install.
+
+The main thing here is removal of as much intimidation as possible. You want a working environment where people trust one another, where we feel we can ask questions, both because we don't know, or because we've found a better solution. Fear, and problem-solving in the face of fear isn't a useful metric to judge any person by - how does it help to know how someone does under the worst possible circumstances? 
+
+On Attracting Talent
+
+Hiring is often approached at the 50,000 foot view. "Smart and scrappy" is great at that height, but in order to actually hire you have to connect on a human level. You have to zoom down 48,994 feet. Once you've said "I need the smartest people in the industry", you've applied a filter, and it's not the filter you believe you've applied. Most of the best programmers are humble. The more you understand about software engineering, the less likely you believe you're the "best". Overconfident engineers move fast and break things, yes, but they tend to break the build too. Women, as everyone's brought up, tend to have impostor syndrome. We don't think of ourselves as the best in the industry, nearly ever, despite the reality of the situation. If you'd like to attract more "A" level talent, be clear about what constitutes "A" level. Qualities, over qualifications. Ability over identity. Be clear about what kind of person you'd actually want to hire, and how much growth you'll want while they're in that role. Focus on what they'll do, not a checklist of skills. Being clear about what you'll actually accept is going to get you people who are honest about their talents. 
+
+Another example
+
+An example job posting for a mid-level web developer at a python shop that would appeal to most women I know is this:
+
+We're looking for an engineer with 2 or more years of experience to draw on. This person needs to have the learning mindset, someone who wants to pick up new skills and research new ways of doing things often. 
+
+You're expected to know these things:
+
+What happens when you type "www.example.com" into a web browser.
+Any scripting language, though some experience with Python would be good.
+Enough Javascript to manipulate the DOM
+Know the box model with respect to CSS, and understand HTML to the point where you could knock together a reasonable bootstrapped site.
+Understand how to build a basic API with any web framework
+Understand how to schedule tasks to do data processing, in any language.
+Know some SQL, and know how to use any ORM. Know what an ORM is.
+
+
+If you know at least 80% of that list, go ahead and apply. Our office is in San Francisco, on Market street. We use Python, Django, RabbitMQ, NGINX, Redis, Postgres, some Node.js, and a smattering of other technologies. Our team is comprised of a lot of young entrepreneurial types, as well as industry veterans. We have a lot of fun at work, and our culture runs heavy on the nerdy side. A picture of our office:
+
+[put a picture here.]
+
+Perks:
+
+Market Salaries / Standard benefits
+Catered Lunch *
+Commuter stipend *
+Equity
+Bike parking on-site *
+Gym memberships *
+Lots of beer in the fridge
+Tech talks / continuing education incentives *
+Travel if you want to / Don't if you don't *
+Work from home whenever *
+Bring your dog to work on M / W / F *
+Wellness stipend *
+2 months maternity / paternity leave *
+Childcare subsidy *
+
+That's a lot of perks, I marked the ones that women and married men tend to prioritize more than young bachelors. This posting talks about what you actually need to know and the proficiency level, rather than a laundry list of buzzwords. This will also get you fewer emails from recruiters, who tend to only be able to produce laundry-list candidates. Focusing on what it would actually be like to work there helps candidates that would fit in well actually be able to imagine themselves working there, which increases the chances they'll be able to do well in the interview. 
+
+What you actually want is more people, who feel more empowered, to do more work. You want to output the best product or service you can, and so enabling someone from the very first time you talk to them is crucial. Hiring itself is emotional labor, because what you're doing is seeking to understand someone, not testing them. You're trying to bring someone into the fold, not put them through a trial by fire and then expect them to be able to trust you. Software engineering is probably 60% learning, and 40% problem solving. Learning requires vulnerability - don't force your talent to do 60% of their job away from you, because they can't be vulnerable around you. They won't learn what you need them to, and they won't ever really feel appreciated in their job. Having a process that begins by taking candidates and their time seriously sets a tone that the right candidates will match. Fits will be more obvious than ever, and your culture will improve. You'll also end up with the right mix of diversity that will help you innovate.
+
+Contact me if you're in need of consulting on this. Hackbright Academy and Ashe Dryden (and her book) can also help you fill your pipeline with smart, scrappy ladies, and explain how to hire properly. 
+
+Create a community the hard way
+At Hackbright, we have a strong community. Our students, mentors, partner companies, even applicants we regretfully turn away are very involved, and contribute in a positive way. I've been asked, how did we get here? I've actually been thinking about it myself recently, and I've figured out how we did it. We used one guiding principle that maybe we weren't strictly aware of, but we've followed faithfully and over time, we've built an awesome group of people that continually surprise me.
+
+Love is all you need
+
+I'll get into details, so follow me here. 
+
+Our main guiding principle is that we love them. Love them really, honestly, like they are family. 
+
+It turns out, you can't actually get anything worthwhile without caring about it. Think back to every job you've had where you didn't care, where the seconds ticked by like minutes, and the minutes were hours. You probably found yourself resenting your boss, your customers, which in turn feeds the cycle of resentment.
+
+Now think of a place you've been, some organization, where you cared. Maybe this was a school, or a church, or a volunteer organization. Maybe you were lucky enough to have been part of a company that cared about you, and you in turn cared about those around you. However, excepting perhaps in the case of a church, you probably wouldn't describe that feeling as "love". You might say, "I love my job" or "I love this company", but what you likely meant by that is "I really like this job".
+
+This is a step further - this takes something from you, but gives immeasurably back. Being a part of a community with the right stuff, the stuff people will pour their hearts into, that requires actual love. 
+
+This is not to say, happy-go-lucky hippy flower power time prevails all the time. This past class, "Hackbright" became a verb, which means "to cry on the floor of the bathroom". Emotions don't run that strong when you don't love something. Familial love doesn't come easy most of the time - think about the screaming fights you've had, and times when you've had to cut a family member off because that was the only way they could get better. Sometimes, you have to say something difficult to someone, and then they don't understand, and they hate you for it, and you have to wait until they come to an understanding on their own. 
+
+But think about this - you'd do pretty much anything for your family. Anything to ensure they have a happy, healthy life. Anything to make them more comfortable, their lives easier, to make them better than they are. These actions are how you tell them you love them, not by saying "I love you", although verbal affirmation is an important action to take. 
+
+So, how to create a community? Love them. Honestly, deeply love and care that they are able to do whatever it is they have their heart set on, and help them to do that. They will love you back, and they will love each other the same way. Do the love thing in your own way, we each have our own special-snowflake way of showing it.
+
+The Business Case for Love
+
+This totally works, by the way. We're not the only ones doing this. I can name some companies offhand that love their customers in an authentic way. Zappos, Rackspace, Keen.io. There are many more, but those are companies I can especially call out. They range from large to small. Famous to startup. The common factor is authenticity, and success. You can't fake this kind of thing, and if you try your customers will know. 
+
+When your customers know you love them, they don't switch brands at the slightest slip-up. They don't leave because you're not perfect, because you're not the cheapest option. It's no longer a race to the bottom line with your customers when you have an actual relationship with them. Much like a real relationship, the other person doesn't leave because someone is slightly more attractive, or makes slightly more money than you. These things are superficial compared to the relationship you've built, and your competitors can't make a dent in that. 
+
+They also are typically prepared to pay more - when you create a relationship, your customers see your product as unique, even if it's not. You're probably not the only person out there doing what you're doing, but relationships are unique. Your customers pay for a relationship, not a brand, not a product. 
+
+Roadmap to Love
+
+1. Understand that your customers are the reason you exist. You might be a startup or a global brand, but because these people like what you do, you get to keep doing it. Be thankful, be awed.
+
+2. Internalize this message, and spread it around the organization. This is easiest if you're a startup, because you can be selective with who you hire. Look to Zappos if you're not a startup.
+
+3. Show your customers you love them. Think about what you'd have to do to prove to someone that you love them, without saying it out loud. Show them with actions. Prove to them they're your favorite customer. 
+
+Human support agents, email response times, caring that issues are resolved, following up. Selling things at a reasonable price. Ad campaigns that take your customer seriously, as though they are smart, human, and have dignity. Messaging that talks about who you actually are as a company, as a group, instead of pandering. Compassion when your customer messes things up. These things and more come out of that simple principle, so prove you love your customers, and they'll love you back.
+
+Scarcity and Hackbright - the Top 5%
+There are some major parts of Hackbright that deal with scarcity. Our business model (and we are a business) is based on it, and our company philosophy (and we do have one, one that's very important to us) is based around it as well. First, let's talk business.
+
+There aren't enough developers. Not in Silicon Valley, although you can't sit in a cafe without hearing about code or devops. Not in the rest of the world, either. There are nonprofits that need help, terrible industries that need to be automated away (I'm looking at you, medical billing), and information that needs spreading to the bottom billion, so that they can be informed, and more powerful. This kind of thing sounds great, but in order for any of those jobs to get filled, there first have to be enough developers to go around. And there aren't.
+
+There also aren't enough women in development. There are probably a million and a half ways to solve this issue, we're choosing one path. Increasing the number of female devs directly by training them is a great start to help with the issue, as well as solve the scarcity of developers. This brings us to supply and demand, and scarcity. 
+
+We exist because companies can recruit from us. We provide enough high-quality candidates that companies come back to us time and time again. The reason our candidates are high quality is because we train them, yes, but also because we select them from a pool of smart people. Currently, we accept 5% of candidates that apply to Hackbright. Why? Wouldn't it make sense to take more? We're a for-profit company, the students pay us to attend. We're leaving money on the table by not accepting more - we could double our earnings by accepting 10%, right?
+
+The problem here is complex. It's about keeping our quality high - as a company, and for our students. We try to do the right thing for quality first, profit second. Scaling out doesn't make sense if the experience gets worse, or if fewer of our students end up with jobs. The reason quality suffers is because of scarcity.
+
+First, we're doing very emotional labor. Emotional labor is traditionally undervalued, and it's also regarded among the professional world as a limitless resource. If you're a caring person, you should be able to expand that caring to an infinite set of people, right? This is a fallacy - one person can't be the emotional pillar needed from a teacher to as many people as they're asked. Even given that there simply isn't time in the day to do that, we're ignoring the fact that helping someone through something difficult, like say, rewiring your brain to think like a computer scientist in 10 weeks, takes something out of you. It's rewarding, sure. It gives something to you that you can't buy or get otherwise. But it does drain. 
+
+So the emotional labor is scarce - people who can both program, debug well, explain things well, and do the emotional labor are scarce, but the biggest scarcity is people willing to do that labor. This labor is traditionally reserved for significant others, friends, your children, your family. When doing this work, students often replace your friends and family, become as significant to you as your children. You have to be willing to do that to at least a limited extent, and most people aren't, or at least not for long. 
+
+The next scarcity is space - simply having enough desks and pairing stations in a city like San Francisco is both expensive and hard to find. Keeping everyone together as a cohesive class unit is also tough. 30 is probably the maximum number of people that could function as a class, especially because being a part of the class is such an integral part of Hackbright in general. We can't just upsize the class, we'd have to create an entirely new instance of the class - with lead instructors, assistant instructors, a new group of mentors, et cetera. 
+
+The last scarcity is absorption. The bay area needs more developers, but has a limited capacity to absorb new junior developers. Everyone who comes out of any intensive is essentially a "prepared beginner", who, through their own curiosity and drive, as well as a bit of help from a senior developer, can add functionality to software projects, run tests, debug, and make modifications. They're not yet capable of designing a project that scales, or spinning off an entire feature branch without much help. They do consume resources when they join a company, although the company gets a net gain. After about 3 months, all of our students are major contributors in whatever teams they join, but it does take that 3 months. We release 26-30 new candidates quarterly, and they've got to go somewhere - there are a finite number of jobs even for perfect candidates with the exact right stuff.
+
+So, the top 5%. Let's talk about what that means. I wrote about what makes a great Hackbright student in the past - drive, ability to learn by yourself but also learn as part of a team. A personality that makes people want to be around you. A grasp of logic, a history with it is preferred. General problem solving - wherever that might be - being a nanny or an executive assistant often requires supreme skill in solving problems, so we're not just looking for electrical engineers (although we do get a lot of those). These people aren't the type you can identify with trends and numbers, unfortunately (or we'd automate our admissions process). They're the type best suited to learn fast, be scrappy, charm their way into situations but most importantly live up to their promise.
+
+Sometimes we say things like "We let people in because we like them". What does that mean? We like people who are smart, funny, dynamic and driven. We like people who are "cool" - and to us, cool means "can do amazing things". We've learned to trust our gut, about liking someone. Those we tend to like best, those we'd most likely be friends with outside of any of this, those are the ones who do the best.  That doesn't mean that the top 50% aren't people we like, or aren't suited to Hackbright. But, it seems like we can only take about 5% at a time.
+
+So, back to philosophy.
+
+We're doing this to fight scarcity - the scarcity of people we like, who can do amazing things. We exist because of the scarcity of these people, and because we've been gifted with an ability to suss these people out. There are a lot of things that correlate with success - ivy leagues, big names on your resume. But sometimes the ability to get children to like you, or the capability to take word vomit from someone who can think but not articulate, sometimes those things put you in the top 5%. Our 5% - these are people who will change the face of SV by doing amazing things. Things we're probably, as a people (devs), not capable of doing. 
+
+Not yet. 
+
+But we'll get there - 5% at a time.
+
+I care about my students a great deal. My company, a great deal. Our mission, a great deal.
+
+Burnout comes regardless of where you work, what you're working on, how much you love the people and the things you do. It comes suddenly, and if you're the type of person who takes very seriously the work you do, it will probably come dramatically. One day you won't be able to leave for work, or go to bed for work the next day. You may even be on stage, speaking at a public event when it hits you that you can't do this today, or tomorrow. That you need time for you, and no one else.
+
+I'm an introvert, and I'm doing a very public-facing job. I speak at conferences. I speak every day to my students in a large group. I sit down with people and take their emotional baggage and their fears about the future. I help them through the technical struggles they have while diagnosing where their misunderstandings are, as well as trying to understand what their weaknesses as a whole lie. I try to understand weakness in people constantly, because it is my job to make them strong. 
+
+It is the best job. I can think of no other profession that plays to my strengths as well as this job. People tend to open up to me, I can look at someone's code or their writing and usually divine their thought process. I can look at a thought process, and figure out where understanding falls away, where concepts become fuzzy and hard to grasp, and then I can usually clear the fuzziness by explaining exactly what they don't know, which keeps them engaged because I'm not repeating myself. Managing junior developers or an internship program might be a decent alternative, but it pales in comparison to creating new software developers from latent talent. I also have a penchant for quotability, for simplifying concepts in a dramatic way or for well-worded calls to action. This makes me a good speaker, and a good mentor.
+
+However, I only have so much to give. I know so many amazing people now, so many who have full lives that they very much would like me to be a part of. I know amazing people who need strength of the particular brand that I am great at giving, but at this point I need that strength for myself. I need someone to sit with ME and have that frank talk, that spirit-bolstering pep talk, that serious advice that I take to heart and follow. I need it to come from someone who understands me, someone who can give me advice because they have been there, and back again, and they know how to get me up in the morning and keep me up at night. 
+
+The secret is that I am not actually capable of doing things I don't want to do. I can't grit my teeth and bear it, or just push through because hey, a job's a job. My parents offer this advice constantly, it is useless to me. Because I know this about myself, I know that I very much love my work and don't want to leave it. Being burnt out isn't a sign that this is the wrong work for me. It's a sign that it's very much the right work for me, because I can go as hard and as fast as I want to with this job. I can make impassioned pleas and they will be listened to, log complaints and action will be taken. I can have everything I want, but I have to ration my enthusiasm, because this is the marathon. I can't get too tired and stop, because my energy drives the whole machine, and we can't lose momentum.
+
+So, I need help. I need someone I can trust to be my right hand, to train to be my equal in accomplishment and capability. The potential energy they must possess has to transform quickly into kinetic energy used to drive us all forward, to keep everything moving. Because it is so, so important that we keep going. 
+
+I've been tooling around, trying to start my own bootcamp for about 2 months now. Ever since December, I've been telling people that I'm trying to start my own school. I had big dreams, grand ideas that I felt only I had the vision and drive to actually implement.
+
+
+
+The plan was to start a school for women only. Based on my experience with GDI, I noticed that when women are learning with other women, starting at or around the same skill level, they did much better than when they mingled genders. It seems to be about gender, about being around people you identify with and feel safe around. Women learn differently, and they value different social dynamics when they're around each other. That, and they feel less like the class is a race or a competition - instead they collaborate, and are open about what they don't understand.
+
+This isn't to say the model wouldn't have it's problems - women who don't like each other react very strongly, much more strongly than when they don't like a man. But, as this is a learning environment, and everyone is generally very friendly and communicative here in SF, I didn't anticipate any problems there. It would also be very different from a GDI class, we would be pre-screening applicants for compatibility and ambition. By getting to know them, we could structure the class for harmony.
+
+All of this had me very excited - I had trouble sleeping, laying down at night required a pen and paper nearby at all times in order for me to feel like I could fully rest. I'd spring out of bed every day - but the excitement began to wane once I figured out how much legal, financial, and general business development there was involved. It was extremely draining. So I started shopping for a cofounder, and I took on an intern - Lillian Chan, who I had been training in programming for several months.
+
+I started doing competitive analysis on the bootcamps I would have to compete against, and came across HackBright. I had heard of them before, mostly good things from their students, and from people considering applying to be students, the only complaint I had heard was that "they were a bunch of dudes". At some point after hearing this enough times, I started searching through the about page of every bootcamp, trying to find a female teacher anywhere. I found none. Irritated, I turned where we all turn when we have a bone to pick with a community.
+
+I tweeted ..
+
+Are there... ANY female instructors at ALL at any of these bootcamps? /cc @devbootcamp @hackbright @catalystclasssf @ga
+
+— Liz/Ann Howard (@lizthedeveloper) February 6, 2013
+
+Ever quick on the draw, @Hackbright replied.
+
+
+
+@lizthedeveloper yes, we are focused on having an awesomely diverse team.We have two women joining our team in March :)
+
+— Hackbright Academy (@Hackbright) February 7, 2013
+
+
+
+After calling them out, they offered to grab coffee with me, and we had a bit of a chat. I explained my motivations for wanting to start a bootcamp for women. Mostly, I was frustrated by the lack of women teaching, the lack of focus on hard computer science, the lack of fundamentals, the creeping drift of ideas like "you don't need to know how it works, you just need to know how to use it", and other such nonsense. I feel like teaching people tools without teaching concepts is a recipe for kludgy, unmaintainable code and the inability for anyone to take such training programs seriously. 
+
+Christian expressed the exact same doubts about the other bootcamps in the space. He talked about how Hackbright did command-line on the first day, how they build concepts up, rather than going from the top down. How curiosity carries students deep into how things work, and how that contributes to their ability to understand the ramifications. He was clearly on his game, which I was immediately excited about.
+
+That said, I was working on a competitor. I had business partners, funding, a space lined up, a long-term vision on how to expand in a slow, but steady manner. I was shopping for co-founders. 
+
+I realized after talking to Christian and David that I had never met anyone who "got it" as much as they did. I've yet to meet anyone since. I realized that this was a once-in-a-lifetime opportunity to shape a company, and help two people who have come to be some of my very closest friends. I realized that working against them would make no sense, so I informed them I'd be joining the team. 
+
+It was one of the best decisions I've made in my entire life. I don't think I'll ever regret it. 
