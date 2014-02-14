@@ -43,90 +43,77 @@ def make_chains(corpus, n):
 
     return markov_dict
 
+# takes in a dictionary and returns a list of all capitlized keys in the dictionary
 def capital_start(markov_dict):
     capitalized_keys = []
     for i in range(len(markov_dict.keys())):  
-        # TODO change to > or < statement
         first_letter = markov_dict.keys()[i][0][0]
-        if ord(first_letter) >= ord('A') and ord(first_letter) <= ord('Z'):
+        if ord(first_letter) >= ord('A') and ord(first_letter) <= ord('Z'): # ord(char) more readable than straight-up ord numbers
             capitalized_keys.append(markov_dict.keys()[i])
     return capitalized_keys
 
+# takes in a dictionary and returns a list of all keys with end punctuation
 def end_punct(markov_dict):
     endpunct_keys = []
-    # TODO change to > or < statement
     for i in range(len(markov_dict.keys())):
-        if ord(markov_dict.keys()[i][-1][-1]) in [33, 34, 46, 63]: # change to strings of punc
+        if ord(markov_dict.keys()[i][-1][-1]) in ['!', '?', '.', '~']: # strings are more readable than ASCII ordinal numbers
             endpunct_keys.append(markov_dict.keys()[i])
     return endpunct_keys
 
-# takes in a dictionary, list of capital keys, list of end keys, n = n-gram, x = max # characters
-# returns string
+# takes in a dictionary, list of capital keys, list of end keys, n = n-gram, x = max # characters desired in markov string
+# returns markov string
 def make_text(chains, cap_keys, end_keys, n, x):
     """Takes a dictionary of markov chains and returns random text
     based off an original text."""
 
+    # to start off the algorithm, choose a random key from the list of capitalized keys
     key = random.choice(cap_keys)
-    # COMMENT Take the start key and choose randomly from associated values
 
     # print "this is your start string: ", markov_string
     # print "this is the word to be added to the string: ", new_word
     markov_string = ''
-    # convert tuple key into a string
+    # convert tuple key into a string and add it to the markov string
     for word in range(len(key)):
         markov_string += key[word] + ' '
 
-
     while len(markov_string) < x:
     # for i in range(x - n):
-        # checks to make sure not final key so as to get next word that does not exist
-
+        # if key is not in dictionary (this happens if we create a key from the last set of words in the provided text), choose another key
         if not chains.get(key):
             key = random.choice(chains.keys())
+            continue # continue on to the next iteration
+            # why wasn't this continue here already...did someone delete it? -__-
 
+        # if key has an end punctuation, break out of the while loop and return the completed markov string
         if key in end_keys:
             break
-        # if key in end_keys:
-        #     key = random.choice(cap_keys)    
-        # if sentence_checker(markov_string): #key in end_keys:
-        #     return markov_string
-            # break
-        # COMMENT append word to existing string
             
-        # To-Do check with Nick if this is avoiding list concatenation issue
-        # compare this part to m.py
         new_word = random.choice(chains[key])
         markov_string += new_word + ' '
         # print i, markov_string
         # print ''
-        # COMMENT Take the existing string and split into list temporarily
-        # markov_string_list = markov_string.split()
-        # COMMENT join the last n items as new look up key
 
-        # better to contruct a new tuple from scratch
+        # create a new key
         new_key_list = list(key[1:])
-        # print i
-        new_key_list.append(new_word) # " ".join(markov_string_list[-n:])
+        new_key_list.append(new_word)
         key = tuple(new_key_list)
-        
-        # COMMENT use new look up key to find associated values to choose randomly from
 
     return markov_string
-    # print "your markov_string is: ", markov_string
 
 # takes in sentence and checks for end punctuation
 def sentence_checker(sentence):
-    # print sentence[-1]
+    # index will be -2 since we are adding a space to the end of each word added to the markov string
     if sentence[-2] in ['!', '?', '.', '~']:
         return True
     else:
         return False
 
 def main():
-    # COMMENT allows unspecified number of files to mash together
+    # allows unspecified number of arguments
     args = sys.argv
     # Ensure user inputs at least one text file
     # isValid = True
+    # Don't need this isValid boolean! 
 
     if len(args) < 2:
         print "Please provide at least one .txt file."
@@ -141,13 +128,12 @@ def main():
             # isValid = False
             return
 
-    # COMMENT loops through and combines all the text files into one string in input_text
     # if isValid:
 
-    #COMMENT: get raw input from user for n grams. (this was originally in make_chains() function)
+    # get raw input from user for n, to be passed into make_text
     n = int(raw_input("How many n's in your grams? > "))
 
-    #COMMENT: get raw input of length of Markov string requested (this was originally in make_text() function)
+    # get raw input for char length of final markov string
     x = int(raw_input("What is the maximum number of characters in your text? > "))
 
     input_text = ""
@@ -156,23 +142,16 @@ def main():
         for j in xrange(200):
             input_text += f.readline()
 
-    chain_dict = make_chains(input_text, n)
-    # for i in chain_dict.items():
-    #     print i
-    # print chain_dict
-    cap_keys = capital_start(chain_dict)
-    end_keys = end_punct(chain_dict)
-
-    # TEST: test for capital and puncutation functions
-    # print cap_keys
-    # print end_keys
+    chain_dict = make_chains(input_text, n) # dictionary
+    cap_keys = capital_start(chain_dict) # list of keys
+    end_keys = end_punct(chain_dict) # list of keys
 
     random_text = 'Beginning text'
+
+    # check if sentence satisfies our specifications
     while not sentence_checker(random_text):
-        # print random_text[-2]
-        # print sentence_checker(random_text)
-        # print random_text
         random_text = make_text(chain_dict, cap_keys, end_keys, n, x)
+
     print random_text
     # tweet(random_text)
 
@@ -182,8 +161,3 @@ if __name__ == "__main__":
 
 # TO-DO LIST
 # Create a new Twitter persona and wire up your markov program with the twitter module (import twitter) to produce random tweets.
-
-# Do the checks for capital letters and end puncutation
-# Put in check if input file exists and return message if not
-
-# check against markov.py methodology
