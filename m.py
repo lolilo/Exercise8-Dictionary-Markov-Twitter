@@ -169,6 +169,14 @@ def main():
         if should_we_tweet == 'Y' or should_we_tweet == 'y':
             tweet(random_text)
             isTweet = True
+            user_still_tweeting = raw_input('Would you like to continue tweeting markov chains(Y/N)? ')
+            
+            # if user still wants to tweet, reset variables to create new markov strings
+            # else, do nothing, which will end the script
+            if user_still_tweeting == 'Y' or user_still_tweeting == 'y':
+                isTweet = False
+                random_text = 'initial placeholder text'
+
         else:
             random_text = 'initial placeholder text'
 
